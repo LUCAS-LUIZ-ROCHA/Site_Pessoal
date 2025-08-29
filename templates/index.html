@@ -12,12 +12,23 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <div class="container">
-    <a class="navbar-brand" href="#">Lucas Luiz</a>
+    <!-- Link com imagem circular e nome ao lado -->
+    <a class="navbar-brand d-flex align-items-center" href="#home" style="gap: 0.5rem; cursor: pointer;">
+      <img src="{{ url_for('static', filename='img/perfil.jpeg')}}"
+     class="rounded-circle"
+     style="width: 60px; height: 60px; object-fit: cover;">
+
+      <span>Lucas Luiz | Perito Digital - DFIR</span>
+    </a>
+
+    <!-- Botão para menu responsivo no mobile -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
       data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <!-- Itens do menu -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link active" href="#home">Início</a></li>
@@ -29,13 +40,38 @@
   </div>
 </nav>
 
-<!-- Seções SPA -->
-<section id="home" class="p-5 text-center bg-primary text-white">
-  <div class="container">
-    <h1>Lucas Luiz</h1>
-    <p>Perito em Computação Forense & Cybersecurity Analyst</p>
+
+<!-- Seções HOEM - SPA -->
+<section id="home" class="py-5 text-white position-relative">
+  <div class="background-overlay"></div> <!-- Camada para a transparência -->
+  <div class="container position-relative" style="z-index: 2;">
+    <div class="row align-items-center justify-content-center flex-md-row flex-column-reverse">
+      <!-- Conteúdo da coluna texto e imagem -->
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <div class="bg-white text-dark rounded-4 shadow p-4">
+          <h2 class="fw-bold mb-3">Lucas Luiz Rocha</h2>
+          <h5 class="mb-3">Perito Digital &amp; Cybersecurity Analyst</h5>
+          <p>
+           Sou um profissional apaixonado por análise forense digital, investigação cibernética e segurança da informação.
+Graduado em Programação e pós-graduado em Computação Forense, com MBA em Cybersecurity e Cybercrimes. Atuo na área de DFIR, fascinado por ataque e defesa cibernética (Blue Team & Red Team) e Cloud Security (AWS | Azure | GCP).
+Tenho expertise em perícia técnica, resposta a incidentes, fraudes e crimes digitais.
+
+Aqui você encontra meu portfólio, projetos, certificações internacionais e formas de contato.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+        <img src="{{ url_for('static', filename='img/home.jpeg') }}" 
+             alt="Retrato Lucas Luiz"
+             style="width: 100%; max-width: 280px; border-radius: 24px; box-shadow: 0 0.8rem 2rem rgba(0,0,0,0.2); object-fit: cover;">
+      </div>
+    </div>
   </div>
 </section>
+
+
+
+
 
 <section id="portfolio" class="p-5">
   <div class="container">

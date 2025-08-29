@@ -1,3 +1,15 @@
 body {
   scroll-behavior: smooth; /* Para rolagem suave nas âncoras */
 }
+
+
+#home .background-overlay {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  background: url('/static/img/fundo1.jpg') center center/cover no-repeat;
+  opacity: 0.8; /* controle de transparência */
+  z-index: 1;
+  filter: brightness(0.6); /* deixa o fundo levemente escurecido para destacar texto */
+}
+
