@@ -13,3 +13,17 @@ body {
   filter: brightness(0.6); /* deixa o fundo levemente escurecido para destacar texto */
 }
 
+/* Deixa as setas pretas com fundo claro e esconde o fundo branco padrão do Bootstrap */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) grayscale(1) brightness(0);
+  background-color: transparent !important;
+}
+
+
+/* Aqui estou deixando todas as imagens do carrosel em um tamanho fixado */
+.carousel .card-img-top {
+  width: 100%;
+  height: 250px; /* altura fixa */
+  object-fit: cover;
+}

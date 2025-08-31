@@ -41,7 +41,7 @@
 </nav>
 
 
-<!-- Seções HOEM - SPA -->
+<!-- Seções HOME - SPA -->
 <section id="home" class="py-5 text-white position-relative">
   <div class="background-overlay"></div> <!-- Camada para a transparência -->
   <div class="container position-relative" style="z-index: 2;">
@@ -73,12 +73,74 @@ Aqui você encontra meu portfólio, projetos, certificações internacionais e f
 
 
 
-<section id="portfolio" class="p-5">
+<section id="portfolio" class="py-5 bg-light">
   <div class="container">
-    <h2>Portfólio</h2>
-    <p>Aqui você pode listar seus projetos mais importantes...</p>
+    <h2 class="mb-4 text-center fw-bold">Portfólio</h2>
+    <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+      <div class="carousel-inner">
+
+        <!-- Slide 1: CARD Cybersecurity -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+            <div class="card mx-2" style="width: 20rem;">
+              <img src="{{ url_for('static', filename='img/Cybersecurity.jpg') }}" class="card-img-top" alt="Cybersecurity">
+              <div class="card-body">
+                <h5 class="card-title">Cybersecurity | Consultoria</h5>
+                <p class="card-text">Sou Parceiro oficial da Bluepex Cybersecurity, oferecendo consultoria especializada
+                   para empresas que buscam proteção avançada contra ameaças digitais.</p>
+              </div>
+            </div>
+            <!-- Card 2 no mesmo slide -->
+            <div class="card mx-2" style="width: 20rem;">
+              <img src="{{ url_for('static', filename='img/pericia.png') }}" class="card-img-top" alt="Perícia Digital">
+              <div class="card-body">
+                <h5 class="card-title">Perícia Digital | DFIR</h5>
+                <p class="card-text">Atuo na Perícia Digital e Resposta a Incidentes, analisando evidências digitais para identificar
+                   causas, mitigar impactos e apoiar investigações. Produção de laudos para processos judiciais e corporativos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: ERP + Treinamentos -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="card mx-2" style="width: 20rem;">
+              <img src="{{ url_for('static', filename='img/erp.jpg') }}" class="card-img-top" alt="Pentest">
+              <div class="card-body">
+                <h5 class="card-title">Sistemas ERP | SAAS</h5>
+                <p class="card-text">Especialista na revenda e implementação de Sistemas SAAS da Gargano Systems, 
+                  ajudo microempresas e MEIs a digitalizarem seus negócios, modernizando processos de gestão e aumentando 
+                  a eficiência com soluções em nuvem acessíveis e seguras.</p>
+              </div>
+            </div>
+            <div class="card mx-2" style="width: 20rem;">
+              <img src="{{ url_for('static', filename='img/treinamento.jpg') }}" class="card-img-top" alt="Treinamentos">
+              <div class="card-body">
+                <h5 class="card-title">Palestras | Treinamentos</h5>
+                <p class="card-text">Realizo palestras de conscientização em cybersecurity para colaboradores, oferecendo 
+                  treinamentos práticos sobre proteção digital. Promovo testes de phishing, orientações sobre compliance e LGPD,
+                   preparando sua equipe para atuar com segurança e responsabilidade no ambiente digital.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
   </div>
 </section>
+
 
 <section id="services" class="p-5 bg-light">
   <div class="container">
