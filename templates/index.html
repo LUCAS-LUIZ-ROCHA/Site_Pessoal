@@ -141,13 +141,437 @@ Aqui você encontra meu portfólio, projetos, certificações internacionais e f
   </div>
 </section>
 
-
-<section id="services" class="p-5 bg-light">
+<!-- Seção com cards para Serviços e seus modais -->
+<section id="services" class="py-5 bg-light">
   <div class="container">
-    <h2>Serviços</h2>
-    <p>Descrição dos serviços que você oferece...</p>
+    <h2 class="mb-4 text-center fw-bold">Serviços</h2>
+    <!-- Carousel -->
+    <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <!-- Linha 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="{{ url_for('static', filename='img/assinatura.jpg') }}" class="card-img-top" style="height:120px; object-fit:cover;">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Perícia em Assinaturas Digitais</h5>
+                  <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modal1">Saiba mais</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 1: Perícia em Assinaturas Digitais -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="modal1Label">Perícia em Assinaturas Digitais</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        Análise técnica, validação e investigação de assinaturas digitais em documentos eletrônicos, garantindo a autenticidade e integridade para processos judiciais e negociações empresariais.
+      </div>
+      <div class="modal-footer">
+        <a 
+          class="btn btn-success fw-bold"
+          href="https://wa.me/5511995631823?text=Olá%20quero%20contratar%20Perícia%20em%20Assinaturas%20Digitais%20-%20Análise%20técnica%2C%20validação%20e%20investigação%20de%20assinaturas%20digitais%20em%20documentos%20eletrônicos%2C%20garantindo%20a%20autenticidade%20e%20integridade%20para%20processos%20judiciais%20e%20negociações%20empresariais."
+          target="_blank"
+        >
+          Contratar
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="{{ url_for('static', filename='img/investigacao.jpg') }}" class="card-img-top" style="height:120px; object-fit:cover;">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Investigação Digital de Crimes e Fraudes</h5>
+                  <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modal2">Saiba mais</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 2: Investigação Digital de Crimes e Fraudes -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="modal1Label">Investigação Digital de Crimes e Fraudes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        Investigação e apuração técnica de crimes digitais e fraudes, rastreando evidências eletrônicas para apoiar investigações e tomada de decisão segura.
+      </div>
+      <div class="modal-footer">
+        <a 
+          class="btn btn-success fw-bold"
+          href="https://wa.me/5511995631823?text=Olá%20quero%20contratar%20Perícia%20em%20Assinaturas%20Digitais%20-%20Análise%20técnica%2C%20validação%20e%20investigação%20de%20assinaturas%20digitais%20em%20documentos%20eletrônicos%2C%20garantindo%20a%20autenticidade%20e%20integridade%20para%20processos%20judiciais%20e%20negociações%20empresariais."
+          target="_blank"
+        >
+          Contratar
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="{{ url_for('static', filename='img/justica.jpg') }}" class="card-img-top" style="height:120px; object-fit:cover;">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Assistência Técnica em Processos Judiciais</h5>
+                  <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modal3">Saiba mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal 3: Assistência Técnica em Processos Judiciais -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="modal3Label">Assistência Técnica em Processos Judiciais</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        Atuo como assistente técnico em processos judiciais, elaborando pareceres, impugnações e análises elaboradas para fortalecer sua defesa ou acusação.
+      </div>
+      <div class="modal-footer">
+        <a 
+          class="btn btn-success fw-bold"
+          href="https://wa.me/5511995631823?text=Olá%20quero%20contratar%20Perícia%20em%20Assinaturas%20Digitais%20-%20Análise%20técnica%2C%20validação%20e%20investigação%20de%20assinaturas%20digitais%20em%20documentos%20eletrônicos%2C%20garantindo%20a%20autenticidade%20e%20integridade%20para%20processos%20judiciais%20e%20negociações%20empresariais."
+          target="_blank"
+        >
+          Contratar
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="row">
+            <!-- Linha 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="{{ url_for('static', filename='img/mobile.jpg') }}" class="card-img-top" style="height:120px; object-fit:cover;">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Perícia em Dispositivos Móveis</h5>
+                  <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modal4">Saiba mais</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 4: Perícia em Dispositivos Móveis -->
+<div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="modal4Label">Perícia em Dispositivos Móveis</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        Especialista na análise forense de smartphones e tablets, recuperando dados, conversas e informações relevantes para investigações e disputas legais.
+      </div>
+      <div class="modal-footer">
+        <a 
+          class="btn btn-success fw-bold"
+          href="https://wa.me/5511995631823?text=Olá%20quero%20contratar%20Perícia%20em%20Assinaturas%20Digitais%20-%20Análise%20técnica%2C%20validação%20e%20investigação%20de%20assinaturas%20digitais%20em%20documentos%20eletrônicos%2C%20garantindo%20a%20autenticidade%20e%20integridade%20para%20processos%20judiciais%20e%20negociações%20empresariais."
+          target="_blank"
+        >
+          Contratar
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="{{ url_for('static', filename='img/pc.jpg') }}" class="card-img-top" style="height:120px; object-fit:cover;">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Perícia em Desktops</h5>
+                  <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modal5">Saiba mais</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 5: Perícia em Desktops -->
+<div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="modal5Label">Perícia em Desktops</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        Especialista em análise completa de computadores, identificando acessos, rastros digitais, arquivos ocultos e atividades suspeitas para casos judiciais e corporativos.
+      </div>
+      <div class="modal-footer">
+        <a 
+          class="btn btn-success fw-bold"
+          href="https://wa.me/5511995631823?text=Olá%20quero%20contratar%20Perícia%20em%20Assinaturas%20Digitais%20-%20Análise%20técnica%2C%20validação%20e%20investigação%20de%20assinaturas%20digitais%20em%20documentos%20eletrônicos%2C%20garantindo%20a%20autenticidade%20e%20integridade%20para%20processos%20judiciais%20e%20negociações%20empresariais."
+          target="_blank"
+        >
+          Contratar
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="{{ url_for('static', filename='img/redes.jpg') }}" class="card-img-top" style="height:120px; object-fit:cover;">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Perícia em Redes</h5>
+                  <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modal6">Saiba mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 6: Perícia em Redes -->
+<div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="modal6Label">Perícia em Redes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        Exame técnico de redes corporativas e domésticas para identificar vulnerabilidades, monitorar tráfego e reconstruir incidentes de segurança.
+      </div>
+      <div class="modal-footer">
+        <a 
+          class="btn btn-success fw-bold"
+          href="https://wa.me/5511995631823?text=Olá%20quero%20contratar%20Perícia%20em%20Assinaturas%20Digitais%20-%20Análise%20técnica%2C%20validação%20e%20investigação%20de%20assinaturas%20digitais%20em%20documentos%20eletrônicos%2C%20garantindo%20a%20autenticidade%20e%20integridade%20para%20processos%20judiciais%20e%20negociações%20empresariais."
+          target="_blank"
+        >
+          Contratar
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="{{ url_for('static', filename='img/consultoria.jpg') }}" class="card-img-top" style="height:120px; object-fit:cover;">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Consultoria</h5>
+                  <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modal7">Saiba mais</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 7: Consultoria -->
+<div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal7Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="modal7Label">Consultoria</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        Ofereço orientações estratégicas em segurança digital, compilace digital, elevando o nível de proteção e resposta da sua empresa.
+      </div>
+      <div class="modal-footer">
+        <a 
+          class="btn btn-success fw-bold"
+          href="https://wa.me/5511995631823?text=Olá%20quero%20contratar%20Perícia%20em%20Assinaturas%20Digitais%20-%20Análise%20técnica%2C%20validação%20e%20investigação%20de%20assinaturas%20digitais%20em%20documentos%20eletrônicos%2C%20garantindo%20a%20autenticidade%20e%20integridade%20para%20processos%20judiciais%20e%20negociações%20empresariais."
+          target="_blank"
+        >
+          Contratar
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="{{ url_for('static', filename='img/erp.jpg') }}" class="card-img-top" style="height:120px; object-fit:cover;">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Adquira seu sistema</h5>
+                  <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modal8">Saiba mais</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 8: Adquira seu sistema -->
+<div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modal8Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="modal8Label">Adquira seu sistema</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        Implanto e configuro sistemas SaaS de gestão, focados em microempresas e MEIs, facilitando a digitalização e automação segura dos processos.
+      </div>
+      <div class="modal-footer">
+        <a 
+          class="btn btn-success fw-bold"
+          href="https://wa.me/5511995631823?text=Olá%20quero%20contratar%20Perícia%20em%20Assinaturas%20Digitais%20-%20Análise%20técnica%2C%20validação%20e%20investigação%20de%20assinaturas%20digitais%20em%20documentos%20eletrônicos%2C%20garantindo%20a%20autenticidade%20e%20integridade%20para%20processos%20judiciais%20e%20negociações%20empresariais."
+          target="_blank"
+        >
+          Contratar
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="{{ url_for('static', filename='img/palestra.jpg') }}" class="card-img-top" style="height:120px; object-fit:cover;">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Contrate palestras e treinamentos</h5>
+                  <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modal9">Saiba mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal 9: Contrate palestras e treinamentos -->
+<div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="modal9Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="modal9Label">Contrate palestras e treinamentos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        Realizo palestras e treinamentos de conscientização em cybersecurity, testes de phishing, LGPD e compliance digital para equipes de todos os níveis.
+      </div>
+      <div class="modal-footer">
+        <a 
+          class="btn btn-success fw-bold"
+          href="https://wa.me/5511995631823?text=Olá%20quero%20contratar%20Perícia%20em%20Assinaturas%20Digitais%20-%20Análise%20técnica%2C%20validação%20e%20investigação%20de%20assinaturas%20digitais%20em%20documentos%20eletrônicos%2C%20garantindo%20a%20autenticidade%20e%20integridade%20para%20processos%20judiciais%20e%20negociações%20empresariais."
+          target="_blank"
+        >
+          Contratar
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="{{ url_for('static', filename='img/resposta.jpg') }}" class="card-img-top" style="height:120px; object-fit:cover;">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Resposta a Incidente</h5>
+                  <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modal10">Saiba mais</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 10: Resposta a Incidente -->
+<div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="modal10Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="modal10Label">Resposta a Incidente</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        Intervenção rápida e precisa em incidentes de segurança, com identificação da causa, contenção de danos, coleta de evidências e orientação pós-incidente.
+      </div>
+      <div class="modal-footer">
+        <a 
+          class="btn btn-success fw-bold"
+          href="https://wa.me/5511995631823?text=Olá%20quero%20contratar%20Perícia%20em%20Assinaturas%20Digitais%20-%20Análise%20técnica%2C%20validação%20e%20investigação%20de%20assinaturas%20digitais%20em%20documentos%20eletrônicos%2C%20garantindo%20a%20autenticidade%20e%20integridade%20para%20processos%20judiciais%20e%20negociações%20empresariais."
+          target="_blank"
+        >
+          Contratar
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="{{ url_for('static', filename='img/auditoria.jpg') }}" class="card-img-top" style="height:120px; object-fit:cover;">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Auditoria</h5>
+                  <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modal11">Saiba mais</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 11: Auditoria -->
+<div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="modal11Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="modal11Label">Auditoria</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        Executo auditorias técnicas detalhadas para verificar conformidade, identificar riscos e propor melhorias na segurança e processos digitais.
+      </div>
+      <div class="modal-footer">
+        <a 
+          class="btn btn-success fw-bold"
+          href="https://wa.me/5511995631823?text=Olá%20quero%20contratar%20Perícia%20em%20Assinaturas%20Digitais%20-%20Análise%20técnica%2C%20validação%20e%20investigação%20de%20assinaturas%20digitais%20em%20documentos%20eletrônicos%2C%20garantindo%20a%20autenticidade%20e%20integridade%20para%20processos%20judiciais%20e%20negociações%20empresariais."
+          target="_blank"
+        >
+          Contratar
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="{{ url_for('static', filename='img/pentest.jpg') }}" class="card-img-top" style="height:120px; object-fit:cover;">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Pentest</h5>
+                  <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modal12">Saiba mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal 12: Pentest -->
+<div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="modal12Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="modal12Label">Pentest</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        Realizo testes de intrusão controlados, simulando ataques para localizar vulnerabilidades e fortalecer a proteção dos sistemas da sua organização.
+      </div>
+      <div class="modal-footer">
+        <a 
+          class="btn btn-success fw-bold"
+          href="https://wa.me/5511995631823?text=Olá%20quero%20contratar%20Perícia%20em%20Assinaturas%20Digitais%20-%20Análise%20técnica%2C%20validação%20e%20investigação%20de%20assinaturas%20digitais%20em%20documentos%20eletrônicos%2C%20garantindo%20a%20autenticidade%20e%20integridade%20para%20processos%20judiciais%20e%20negociações%20empresariais."
+          target="_blank"
+        >
+          Contratar
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
   </div>
 </section>
+
+
+
+
 
 <section id="contact" class="p-5 text-center">
   <div class="container">
