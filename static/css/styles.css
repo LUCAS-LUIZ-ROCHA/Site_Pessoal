@@ -1,6 +1,12 @@
 body {
   scroll-behavior: smooth; /* Para rolagem suave nas âncoras */
 }
+#home {
+  padding-top: 7rem; /* Ajuste para a altura real da navbar + espaço de respiro */
+  min-height: 100vh; /* Garante o preenchimento da tela para centralizar verticalmente */
+  display: flex;
+  align-items: center;
+}
 
 
 #home .background-overlay {
@@ -12,6 +18,64 @@ body {
   z-index: 1;
   filter: brightness(0.6); /* deixa o fundo levemente escurecido para destacar texto */
 }
+
+#home {
+  background: linear-gradient(135deg, #191970 0%, #0D0F3C 100%);
+  color: #f0f0f0;
+  min-height: 600px; /* Ajuste de altura para boa presença */
+}
+
+#home .bg-white {
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow:
+    8px 8px 15px #bebebe,
+    -8px -8px 15px #ffffff;
+  border: none;
+  transition: box-shadow 0.3s ease;
+}
+
+#home .bg-white:hover {
+  box-shadow:
+    12px 12px 22px #a5a5a5,
+    -12px -12px 22px #ffffff;
+}
+
+#home h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: 0.12em;
+  color: #191970;
+  text-shadow: 1px 1px 5px #404080;
+}
+
+#home h5 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+#home p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Box imagem com efeito moderno */
+#home .shadow-rounded-img {
+  border-radius: 24px;
+  box-shadow:
+    0 8px 18px rgba(0, 0, 0, 0.35),
+    inset 0 -4px 18px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.4s ease;
+}
+
+#home .shadow-rounded-img:hover {
+  box-shadow:
+    0 14px 30px rgba(0, 0, 0, 0.5),
+    inset 0 -6px 24px rgba(0, 0, 0, 0.4);
+}
+
 
 /* Deixa as setas pretas com fundo claro e esconde o fundo branco padrão do Bootstrap */
 .carousel-control-prev-icon,
@@ -27,3 +91,243 @@ body {
   height: 250px; /* altura fixa */
   object-fit: cover;
 }
+
+/* Cards do portfólio */
+.portfolio-card {
+  width: 20rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(30, 64, 175, 0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-card img {
+  height: 180px;
+  object-fit: cover;
+  filter: grayscale(30%);
+  transition: filter 0.35s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 32px rgba(30, 64, 175, 0.25);
+}
+
+.portfolio-card:hover img {
+  filter: grayscale(0%);
+}
+
+/* Corpo do card */
+.portfolio-card .card-body {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-card .card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.04em;
+}
+
+.portfolio-card .card-text {
+  flex-grow: 1;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Carousel controles estilizados */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(30, 64, 175, 0.7);
+  border-radius: 50%;
+  width: 3.2rem;
+  height: 3.2rem;
+  filter: drop-shadow(0 0 6px rgba(30, 64, 175, 0.7));
+  transition: background-color 0.3s ease, filter 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #1e40af;
+  filter: drop-shadow(0 0 12px #1e40af);
+}
+
+
+
+
+
+/* Aqui criei uma animação para o card em contato */
+/* Container do texto animado */
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #222, #444, #222);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.6));
+  letter-spacing: 0.15em;
+  padding: 0 1rem;
+}
+
+/* Keyframes para movimento suave da esquerda para direita */
+@keyframes marquee {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+
+
+
+/* Rodapé */
+footer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.05em;
+  box-shadow: inset 0 8px 18px -10px rgba(255, 255, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+footer h3 {
+  font-weight: 900;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #1e40af; /* tom azul vibrante */
+  transition: color 0.4s ease-in-out;
+}
+
+footer h3:hover {
+  color: #1e40af;
+  cursor: default;
+}
+
+footer p.lead {
+  font-size: 1.125rem;
+  color: #ccc;
+}
+
+footer .highlight {
+  color: #1e40af;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+footer .highlight:hover {
+  color: #1e40af;
+}
+
+footer p.developer-credit {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #777;
+  user-select: none;
+}
+
+footer p,
+footer small {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Navbar transparente e fixada no topo */
+.navbar {
+  background: rgba(25, 25, 112, 0.85); /* azul escuro com transparência */
+  backdrop-filter: saturate(180%) blur(10px); /* efeito glass */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  padding: 0.8rem 1.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1050;
+}
+.navbar {
+  min-height: 56px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+
+
+
+
+.navbar-brand {  font-weight: 600;
+  font-size: 1.00rem; /* Diminuído de 1.6rem */
+  color: #e0e6ff;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: color 0.4s ease;
+}
+
+
+/* Navbar fixa: muda ao rolar a página */
+.navbar.scrolled {
+  background: rgba(25, 25, 112, 1); /* fundo mais sólido */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Links do menu estilizados */
+.navbar-nav .nav-link {
+  color: #ddd;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  margin-left: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #00a1cc;
+  text-shadow: 0 0 6px #00a1ccaa;
+}
+
+/* Logo texto estilizado */
+.navbar-brand {
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: #e0e6ff;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: color 0.4s ease;
+}
+
+.navbar-brand:hover {
+  color: #00d2ff;
+  text-shadow: 0 0 5px #00d2ffbb;
+  cursor: pointer;
+}
+
+/* Botão toggler personalizado */
+.navbar-toggler {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(224,230,255,0.85)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  transition: background-image 0.3s ease;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%2300d2ff' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  cursor: pointer;
+}
+

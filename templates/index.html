@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lucas Luiz | Portfólio</title>
+    <title>Lucas Luiz | Perito Digital</title>
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 </head>
 <body>
 
@@ -34,7 +36,9 @@
         <li class="nav-item"><a class="nav-link active" href="#home">Início</a></li>
         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
         <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+        <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        
       </ul>
     </div>
   </div>
@@ -569,19 +573,172 @@ Aqui você encontra meu portfólio, projetos, certificações internacionais e f
   </div>
 </section>
 
-
-
-
-
-<section id="contact" class="p-5 text-center">
+<!-- Seção Depoimentos -->
+<section id="depoimentos" class="py-5 bg-light">
   <div class="container">
-    <h2>Contato</h2>
-    <p>Formas de entrar em contato com você...</p>
+    <h2 class="mb-4 text-center fw-bold">Depoimentos</h2>
+    <div id="carrosselDepoimentos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-md-5 mb-4">
+              <div class="card shadow rounded-4">
+                <div class="d-flex align-items-center p-3">
+                  <img src="{{ url_for('static', filename='img/marcelo.jpeg') }}"
+                       alt="Perfil Cliente 1"
+                       style="width: 64px; height: 64px; object-fit: cover; border-radius: 50%; box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.12);">
+                  <span class="ms-3 fw-bold fs-5">Marcelo Guimarães</span>
+                </div>
+                <div class="card-body bg-white rounded-4 shadow-sm">
+                  <p class="mb-0">
+                    “Meu nome é Marcelo Guimarães, empresário no município do Rio de Janeiro. Não sabia nada de perícia digital, mas minha esposa foi vítima de uma falsificação de assinatura de forma digital, em um contrato fraudulento milionário. No primeiro momento, fiquei enfurecido, sem saber como iria provar que não tinha sido ela quem assinou tal contrato através daquele computador.
+
+Sem saber por onde começar, fui falando com um e com outro, até que um amigo me indicou o Lucas, dizendo que ele era o melhor nesse segmento. Entrei em contato e, de pronto, ele me atendeu. Após conversar e explicar o caso, ele não teve dúvida: colheu todas as informações e, de posse do documento fraudado, fez uma perícia de forma rápida e totalmente completa, fazendo com que ficasse comprovada a fraude, não tendo como a parte que utilizou o documento falso teve evidências para obrigação com a referida cobrança.
+
+Indico fielmente o trabalho de Lucas e posso afirmar que é totalmente competente e confiável.”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-5 mb-4">
+              <div class="card shadow rounded-4">
+                <div class="d-flex align-items-center p-3">
+                  <img src="{{ url_for('static', filename='img/cliente2.jpg') }}"
+                       alt="Perfil Cliente 2"
+                       style="width: 64px; height: 64px; object-fit: cover; border-radius: 50%; box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.12);">
+                  <span class="ms-3 fw-bold fs-5">Carlos Silva</span>
+                </div>
+                <div class="card-body bg-white rounded-4 shadow-sm">
+                  <p class="mb-0">
+                    “A segurança digital da minha empresa mudou de patamar. Atendimento impecável e muito didático.”
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <!-- Card 3 -->
+            <div class="col-md-5 mb-4">
+              <div class="card shadow rounded-4">
+                <div class="d-flex align-items-center p-3">
+                  <img src="{{ url_for('static', filename='img/isj.jpeg') }}"
+                       alt="Perfil Cliente 3"
+                       style="width: 64px; height: 64px; object-fit: cover; border-radius: 50%; box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.12);">
+                  <span class="ms-3 fw-bold fs-5">ISJ Perícias Judiciais</span>
+                </div>
+                <div class="card-body bg-white rounded-4 shadow-sm">
+                  <p class="mb-0">
+                    “Sou Isanilton Joazeiro , Perito Judicial Grafotécnico e Especialista em Análise de Assinaturas. Conheço o trabalho do perito digital Lucas Luiz. Ao longo do tempo, realizamos algumas parcerias e construímos uma troca profissional muito rica. Sempre que tenho dúvidas sobre precificação, métodos de trabalho ou mesmo inseguranças naturais da prática pericial, recorro ao Lucas. Ele sempre se mostrou solícito, com clareza e profissionalismo.
+
+Sua atuação na área digital já me trouxe insights valiosos, que fortaleceram significativamente meu trabalho.
+
+Deixo este depoimento com satisfação, reconhecendo no Lucas não apenas um colega, mas um profissional competente, disponível e confiável. Indico seu trabalho com segurança, como já venho fazendo a clientes e colegas.”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-5 mb-4">
+              <div class="card shadow rounded-4">
+                <div class="d-flex align-items-center p-3">
+                  <img src="{{ url_for('static', filename='img/cliente4.jpg') }}"
+                       alt="Perfil Cliente 4"
+                       style="width: 64px; height: 64px; object-fit: cover; border-radius: 50%; box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.12);">
+                  <span class="ms-3 fw-bold fs-5">Marcos Peres</span>
+                </div>
+                <div class="card-body bg-white rounded-4 shadow-sm">
+                  <p class="mb-0">
+                    “Profissional muito técnico, atencioso e dedicado! Fiquei satisfeito com o resultado.”
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carrosselDepoimentos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carrosselDepoimentos" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
   </div>
 </section>
+
+
+
+
+
+<section id="contato" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4 fw-bold">Contato</h2>
+    <!-- Ícones das plataformas -->
+    <div class="d-flex justify-content-center gap-5 mb-4 flex-wrap">
+      <!-- WhatsApp -->
+      <a href="https://wa.me/5511995631823" target="_blank" class="text-decoration-none text-dark">
+        <div class="d-flex flex-column align-items-center">
+          <i class="bi bi-whatsapp" style="font-size: 2.5rem; color: #25d366;"></i>
+          <span class="mt-2">WhatsApp</span>
+        </div>
+      </a>
+      <!-- Instagram -->
+      <a href="https://instagram.com/lucas_luizrocha" target="_blank" class="text-decoration-none text-dark">
+        <div class="d-flex flex-column align-items-center">
+          <i class="bi bi-instagram" style="font-size: 2.5rem; color: #C13584;"></i>
+          <span class="mt-2">Instagram</span>
+        </div>
+      </a>
+    
+    </div>
+  </div>
+  <!-- Faixa animada de contato -->
+  <div class="bg-black py-3 mt-5 overflow-hidden position-relative">
+    <div class="text-white fw-bold fs-5 animate-marquee" style="white-space: nowrap;">
+      Entre em contato, atendo em todo Brasil
+    </div>
+  </div>
+</section>
+
+<!-- Rodapé -->
+<footer class="bg-black text-white py-5">
+  <div class="container text-center">
+    <h3 class="fw-bold mb-2">Lucas Luiz Rocha</h3>
+    <p class="lead mb-1">Perito em Computação Forense &amp; Cybersecurity Analyst</p>
+    <p class="mb-3">São Bernardo do Campo, Grande ABC, Estado de São Paulo</p>
+    <small class="d-block mb-3">&copy; 2025</small>
+    <p class="developer-credit">
+      Desenvolvido por <span class="highlight">Lucas Luiz Rocha</span>
+    </p>
+  </div>
+</footer>
+
+
+
 
 <!-- Bootstrap Bundle JS (inclui Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+<script>
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+
 </body>
 </html>
+
