@@ -331,3 +331,234 @@ footer small {
   cursor: pointer;
 }
 
+/* Cards do Portfólio */
+#portfolio .portfolio-card {
+  width: 22rem;
+  background: linear-gradient(145deg, #fafafa, #e6e6f0);
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(50, 60, 130, 0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#portfolio .portfolio-card img {
+  height: 190px;
+  object-fit: cover;
+  filter: grayscale(25%);
+  transition: filter 0.35s ease;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+#portfolio .portfolio-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 48px rgba(50, 60, 130, 0.3);
+}
+
+#portfolio .portfolio-card:hover img {
+  filter: grayscale(0%);
+}
+
+/* Corpo do card */
+#portfolio .card-body {
+  padding: 1.25rem 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#portfolio .card-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #323c82;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.6rem;
+  text-transform: capitalize;
+}
+
+#portfolio .card-text {
+  flex-grow: 1;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #4a4a6a;
+}
+
+/* Carousel controls personalizados */
+#portfolio .carousel-control-prev-icon,
+#portfolio .carousel-control-next-icon {
+  background-color: rgba(50, 60, 130, 0.75);
+  border-radius: 50%;
+  width: 3.4rem;
+  height: 3.4rem;
+  filter: drop-shadow(0 0 8px rgba(50, 60, 130, 0.75));
+  transition: background-color 0.3s ease, filter 0.3s ease;
+}
+
+#portfolio .carousel-control-prev-icon:hover,
+#portfolio .carousel-control-next-icon:hover {
+  background-color: #323c82;
+  filter: drop-shadow(0 0 16px #323c82);
+}
+
+
+
+
+/* Estilo geral dos cards de serviços */
+#services .card {
+  background: linear-gradient(145deg, #ffffff, #f0f0f5);
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Efeito ao passar o mouse */
+#services .card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18);
+}
+
+/* Imagem no topo do card */
+#services .card img {
+  height: 140px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+  filter: grayscale(20%);
+}
+
+#services .card:hover img {
+  filter: grayscale(0%);
+}
+
+/* Corpo do card */
+#services .card-body {
+  padding: 1.25rem 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Título do serviço */
+#services .card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+/* Botão Saiba Mais preto estilizado */
+#services .btn-dark {
+  background-color: #2c3e50;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.45rem 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+#services .btn-dark:hover {
+  background-color: #34495e;
+  box-shadow: 0 0 12px rgba(44, 62, 80, 0.7);
+}
+
+/* Controles do carrossel estilizados para contraste */
+#services .carousel-control-prev-icon,
+#services .carousel-control-next-icon {
+  background-color: rgba(44, 62, 80, 0.7);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  filter: drop-shadow(0 0 8px rgba(44, 62, 80, 0.7));
+  transition: background-color 0.3s ease, filter 0.3s ease;
+}
+
+#services .carousel-control-prev-icon:hover,
+#services .carousel-control-next-icon:hover {
+  background-color: #2c3e50;
+  filter: drop-shadow(0 0 16px #2c3e50);
+}
+
+
+
+/* Container geral dos cards */
+#depoimentos .card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background: linear-gradient(145deg, #f0f0f5, #d9d9e3);
+  cursor: default;
+}
+
+/* Efeito hover suave */
+#depoimentos .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* Container da parte superior com imagem e nome */
+#depoimentos .card .d-flex.align-items-center {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #c6c6d1;
+}
+
+/* Imagem circular com borda suave */
+#depoimentos .card img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #6c757d44; /* borda semi-transparente */
+  box-shadow: 0 3px 10px rgba(108, 117, 125, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Quando o card é hover na imagem */
+#depoimentos .card:hover img {
+  box-shadow: 0 6px 22px rgba(108, 117, 125, 0.6);
+}
+
+/* Nome do cliente */
+#depoimentos .card span {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #343a40;
+  margin-left: 1rem;
+  user-select: none;
+}
+
+/* Box do depoimento */
+#depoimentos .card-body {
+  padding: 1.5rem 2rem;
+  font-size: 1rem;
+  font-style: italic;
+  color: #55585c;
+  line-height: 1.5;
+}
+
+/* Controles do carrossel */
+#depoimentos .carousel-control-prev-icon,
+#depoimentos .carousel-control-next-icon {
+  background-color: rgba(52, 58, 64, 0.7);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  filter: drop-shadow(0 0 5px rgba(52, 58, 64, 0.7));
+  transition: background-color 0.3s ease, filter 0.3s ease;
+}
+
+#depoimentos .carousel-control-prev-icon:hover,
+#depoimentos .carousel-control-next-icon:hover {
+  background-color: #343a40;
+  filter: drop-shadow(0 0 12px #343a40);
+}
